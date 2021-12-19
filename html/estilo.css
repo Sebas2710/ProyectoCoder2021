@@ -76,13 +76,7 @@ header{
     z-index: 5;
 }
 
-.logo{
-    display: inline-block;
-    height: 400px;
-    position: relative;
-    left: 40%;
- 
-}
+
 
 .container{
     display: grid;
@@ -94,15 +88,17 @@ header{
     grid-template-areas: "area1 area2";
     
 }
-.hijoUno{
-    
-  
+
+
+.logo{
     justify-self: center;
     grid-area: area1;
     align-self: center;
-
+    width: 100%;
+    
+    
+    height: 100%;
 }
-
 .hijoDos{
     align-self: center;
     justify-self: center;
@@ -121,7 +117,7 @@ footer{
     display: grid;
     
     height: 1200px;
-    max-width: 1200px;
+    width: 100%;
     margin: auto;
     
     grid-template-columns: 33% 34% 33%;
@@ -138,36 +134,37 @@ footer{
 }
 
 .containerDos > div{
-    display: block;
+    display: grid; /*eliminado display:block*/
     padding: 20px;
-    font-size: 8px;
+    font-size: 80%;
     align-self: center;
 }
 .hijoDosB{
     grid-area: nota1;
+    /* eliminado
     justify-self: center;
-    align-self: center;
+    align-self: center; */
     
 }
-
 .hijoUnoB{
     grid-area: banner;
-    justify-self: center;
-    align-self: center;
-  
+   /* eliminado
+   justify-self: center;
+    align-self: center; */
 }
+
 .hijoTresB{
     
     grid-area: nota2;
-    justify-self: center;
-    align-self: center;
+    /*eliminado justify-self: center;
+    align-self: center; */
     
    
 }
 .hijoCuatroB{
     grid-area: nota3;
-    justify-self: center;
-    align-self: center;
+    /* eliminado justify-self: center;
+    align-self: center; */
     
 }
 
@@ -179,4 +176,51 @@ footer{
 
 .containerDos :hover{
     transform: scale(1.15);
+}
+
+.banner{
+    width: 70%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+}
+
+.reviews{
+    width: 50%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+}
+
+.histoClinica{
+    width: 50%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+}
+
+.turnos{
+    width: 50%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
+}
+
+.titulosServicios{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color: blue;
+    font-size: 100%;
+    
+    
+}
+.textoServicios{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+    font-size: 90%;
+    width: 50%;
+    height: auto;
+    align-self: center;
+    justify-self: center;
 }
