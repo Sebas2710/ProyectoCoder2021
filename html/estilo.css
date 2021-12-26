@@ -15,7 +15,7 @@ body{
     width: 100%;
     text-align: center;
     margin: auto;
-    position: fixed;
+    position: sticky;
 
 }
 .menu li a{
@@ -224,3 +224,47 @@ footer{
     align-self: center;
     justify-self: center;
 }
+
+/* extra small
+@media only screen and (max-width:600px) {
+    
+} */
+
+/*small*/ /*
+@media only screen and (max-width:767px) {
+    #grilla{
+        height: 1900px;
+        grid-template-columns: 100%;
+        grid-template-rows: 15% 70% 15%;
+        grid-template-areas: "nav" 
+                            "main"
+                            "footer";
+    
+}
+nav{
+    grid-area: nav;
+    background-color: black;
+}
+main{
+    grid-area: main;
+
+}
+footer{
+    grid-area: footer;
+}
+
+ul{
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* tablets*/
+@media only screen and (min-width:768px) {
+    
+}
+
+/* escritorio */
+@media only screen and (min-width:992px) {
+    
+} 
